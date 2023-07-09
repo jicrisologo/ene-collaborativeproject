@@ -1,9 +1,30 @@
 * {
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     text-align: center;
+}
+
+body {
+    margin: 24px;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+ul {
+    
 }
