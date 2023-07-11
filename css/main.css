@@ -1,15 +1,17 @@
 :root {
     --default-bg-color: #EEE;
     --highlight-bg-color: #CCC;
+    --strong-highlight-bg-color: #CCC;
     --shadow-color: rgba(0, 0, 0, 0.25);
 
     --text-color: #222;
+
+    --first-level-reply: #222;
+    --second-level-reply: #666;
+    --third-level-reply: #AAA;
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    text-align: center;
     transition: all 0.3s;
     color: var(--text-color);
 }
@@ -17,6 +19,9 @@
 body {
     margin: 24px;
     background-color: var(--default-bg-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: center;
 }
 
 .flex-container {
@@ -53,11 +58,11 @@ h3 {
 }
 
 .expandable {
-    font-size: 0 !important;
+    transform: scale(0);
 }
 
-.expandable-container:hover > .expandable {
-    font-size: initial !important;
+.expandable-container > .expandable {
+    transform: scale(1);
 }
 
 p {
@@ -66,13 +71,37 @@ p {
     left: 25%;
 }
 
-a:hover {
-    box-shadow: 0 0 8px 8px var(--highlight-bg-color);
-    background-color: var(--highlight-bg-color);
+.article-content > p {
+    text-align: justify;
+    width: 70%;
+    left: 15%;
 }
 
-ul {
-    
+.post-content > p {
+    text-align: justify !important;
+    width: 90%;
+    left: 5%;
+    padding: 8px;
+}
+
+.first-level-reply {
+    margin-left: 0;
+    border-left: solid 2px var(--first-level-reply);
+}
+
+.second-level-reply {
+    margin-left: 48px;
+    border-left: solid 2px var(--second-level-reply);
+}
+
+.third-level-reply {
+    margin-left: 96px;
+    border-left: solid 2px var(--third-level-reply);
+}
+
+a:hover {
+    box-shadow: 0 0 8px 8px var(--strong-highlight-bg-color);
+    background-color: var(--strong-highlight-bg-color);
 }
 
 .card-item {
@@ -87,18 +116,13 @@ ul {
     background-color: var(--highlight-bg-color);
 }
 
-.article-content > p {
-    text-align: justify;
-    width: 70%;
-    left: 15%;
-}
-
 .fit-image {
     width: 100%;
 }
 
 img {
     box-shadow: 1px 1px 4px 4px var(--shadow-color);
+    z-index: 1;
 }
 
 .loading-spinner {
