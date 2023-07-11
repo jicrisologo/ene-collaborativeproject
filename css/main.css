@@ -45,6 +45,12 @@ h2 {
     letter-spacing: 2px;
 }
 
+h3 {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
 p {
     width: 50%;
     position: relative;
@@ -74,4 +80,8 @@ ul {
 
 .article-content {
     text-align: justify;
+}
+
+.fit-image {
+    width: 100%;
 }
