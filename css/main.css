@@ -116,6 +116,11 @@ a:hover {
     background-color: var(--highlight-bg-color);
 }
 
+.width-shorten {
+    width: 50%;
+    margin: auto;
+}
+
 .fit-image {
     width: 100%;
 }
