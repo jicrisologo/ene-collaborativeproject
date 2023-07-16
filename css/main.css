@@ -116,6 +116,11 @@ a:hover {
     background-color: var(--highlight-bg-color);
 }
 
+.navbar-item {
+    height: 14px;
+    margin-top: 20px;
+}
+
 .width-shorten {
     width: 50%;
     margin: auto;
@@ -123,6 +128,13 @@ a:hover {
 
 .fit-image {
     width: 100%;
+}
+
+.logo-image {
+    margin-right: 40px;
+    vertical-align: middle;
+    box-shadow: 1px 1px 4px 4px transparent;
+    border-right: var(--text-color) 2px solid;
 }
 
 img {
