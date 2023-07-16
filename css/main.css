@@ -121,6 +121,11 @@ a:hover {
     margin-top: 20px;
 }
 
+.navbar-active {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .width-shorten {
     width: 50%;
     margin: auto;
